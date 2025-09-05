@@ -1,4 +1,4 @@
-# Reprodução Senai 🏫
+# Reprodução do site do SENAI 🏫
 
 ## Objetivo 
 Criar uma página totalmente responsiva aplicando os conteúdos das semanas anteriores, garantindo que o site funcione bem em **celulares, tablets e desktops**.
