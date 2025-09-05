@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Header */
+header {
+  padding: 15px 0; 
+  position: sticky;
+  top: 0;
+  z-index: 10; 
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px; 
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cadastro {
+  background-color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  background-image: url('destaque.jpg'); 
+  background-size: cover;  
+  background-position: center;
+  height: 450px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+
+}
+
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+ margin-left: -600px;
+ 
+}
+
+.banner h1 {
+  font-size: 35px;
+  color: #333;
+  
+}
+
+.banner span {
+  color: red; 
+}
+
+.banner button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 20px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  /* butao */
+}
+
+/* Conteúdo */
+.conteudo {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.conteudo h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.conteudo p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #444;
+}
+
+.conteudo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  width: 400;
+  height: 200;
+}
+
+/* Rodapé */
+footer {
+  background-color: #5f5e5e;
+    height: 80px;/* tamanho do footer */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.footertexto{
+    text-align: justify;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer img {
+  height: 30px;
+  margin-bottom: 10px;
+  justify-content: left;
+  
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+
+    .container {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  nav {
+    margin-top: 10px;
+    
+  }
+
+  .banner button {
+    font-size: 15px;
+    
+    
+  }
+  .banner {
+    height: 400px; 
+  }
+
+  .banner-content {
+    padding: 20px; 
+  }
+
+  .banner h1 {
+    font-size: 25px; 
+    
+  }
+
+  .banner-content{
+    display: flex; 
+    justify-content: center; 
+    margin: auto; 
+   
+
+  }
+
+  .conteudo h2 {
+    font-size: 20px; 
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0; 
+  }
+
+  .container {
+    align-items: center;
+  }
+}
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;  
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+main img{
+    width: 400px;
+    height: 250px;
+    border-radius: 5%;
+}
